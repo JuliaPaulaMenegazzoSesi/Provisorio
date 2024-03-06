@@ -16,72 +16,76 @@
 </head>
 
 <body>
-    <div class="pedido">
-        <div class="destino">
-            <select class="form-select" aria-label="aria-label">
-                <option selected>Selecione um destino</option>
-                <option value="salvador">Salvador</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="veneza">Veneza</option>
-                <option value="kilimanjaro">Kilimanjaro</option>
-                <option value="manila">Manila</option>
-            </select>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+    </div>
+    <div>
+        <div class="pedido">
+            <div class="destino">
+                <select class="form-select" aria-label="aria-label" id="desSelect">
+                    <option selected>Selecione um destino</option>
+                    <option value="salvador">Salvador</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="veneza">Veneza</option>
+                    <option value="kilimanjaro">Kilimanjaro</option>
+                    <option value="manila">Manila</option>
+                </select>
+            </div>
+            <div class="hospedagem">
+                <select class="form-select" aria-label="aria-label" id="hosSelect">
+                    <option selected>Selecione um lugar para ficar</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="hostel">Hostel</option>
+                    <option value="pousada">Pousada</option>
+                    <option value="casa">Casa</option>
+                    <option value="sem-lugar">Nenhuma hospedagem</option>
+                </select>
+            </div>
+            <div class="plano">
+                <select class="form-select" aria-label="aria-label" id="plaSelect">
+                    <option selected>Selecione um plano</option>
+                    <option value="1pessoa">1 pessoa</option>
+                    <option value="2pessoas">2 pessoas</option>
+                    <option value="familia">Plano Familia</option>
+                    <option value="luademel">Lua de Mel</option>
+                    <option value="grupo">Grupo</option>
+                </select>
+            </div>
+            <div class="pacotes">
+                <select class="form-select" aria-label="aria-label" id="pacSelect">
+                    <option selected>Selecione um pacote</option>
+                    <option value="restaurante">Pacote Restaurantes</option>
+                    <option value="bar">Pacote Bares</option>
+                    <option value="passeio">Pacote Passeios</option>
+                    <option value="com-criança">Com Crianças</option>
+                    <option value="sem-pacote">Nenhum pacote</option>
+                </select>
+            </div>
+            <div class="tempo">
+                <select class="form-select" aria-label="aria-label" id="temSelect">
+                    <option selected>Selecione o tempo que deseja ficar</option>
+                    <option value="5dias">5 dias</option>
+                    <option value="15dias">15 dias</option>
+                    <option value="mes">Mês</option>
+                    <option value="batevolta">Bate e volta</option>
+                    <option value="ida">Apenas ida</option>
+                </select>
+            </div>
+            <button onclick="calcular()">Calcular Total</button>
         </div>
-        <div class="hospedagem">
-            <select class="form-select" aria-label="multiple select example">
-                <option selected>Selecione um lugar para ficar</option>
-                <option value="hotel">Hotel</option>
-                <option value="hostel">Hostel</option>
-                <option value="pousada">Pousada</option>
-                <option value="casa">Casa</option>
-                <option value="sem-lugar">Sem lugar</option>
-            </select>
-        </div>
-        <div class="plano">
-            <select class="form-select" aria-label="multiple select example">
-                <option selected>Selecione um plano</option>
-                <option value="1pessoa">1 pessoa</option>
-                <option value="2pessoas">2 pessoas</option>
-                <option value="familia">Plano Familia</option>
-                <option value="luademel">Lua de Mel</option>
-                <option value="grupo">Grupo</option>
-            </select>
-        </div>
-        <div class="pacotes">
-            <select class="form-select" aria-label="multiple select example">
-                <option selected>Selecione um pacote</option>
-                <option value="restaurante">Restaurantes</option>
-                <option value="bar">Bares</option>
-                <option value="passeios">Passeios</option>
-                <option value="com-crianças">Com Crianças</option>
-                <option value="sem-pacote">Sem pacote</option>
-            </select>
-        </div>
-        <div class="tempo">
-            <select class="form-select" aria-label="multiple select example">
-                <option selected>Selecione o tempo que deseja ficar</option>
-                <option value="5dias">5 dias</option>
-                <option value="15dias">15 dias</option>
-                <option value="mes">Mês</option>
-                <option value="batevolta">Bate e volta</option>
-                <option value="ida">Apenas ida</option>
-            </select>
-        </div>
+
         <div class="enviar">
-            <label for="nome">Informe seu nome completo:</label>
-            <br>
-            <input type="text">
-            <br>
-            <label for="nome">Informe seu e-mail:</label>
-            <br>
-            <input type="text">
-            <p class="destinoSelect"><span id="destSel"></span></p>
-            <p class="hospedagemSelect"><span id="hospSel"></span></p>
-            <p class="planoSelect"><span id="planSel"></span></p>
-            <p class="pacoteSelect"><span id="pacSel"></span></p>
-            <p class="tempoSelect"><span id="tempSel"></span></p>
+            <p class="CdestinoSelect">Destino: <span id="destP"></span></p>
+            <p class="ChospedagemSelect">Hospedagem: <span id="hospP"></span></p>
+            <p class="CplanoSelect">Plano: <span id="planP"></span></p>
+            <p class="CpacoteSelect">Pacote: <span id="packP"></span></p>
+            <p class="CtempoSelect">Tempo: <span id="tempP"></span></p>
+            <p class="total">Sua viagem custará: <span id="totalP"></span></p>
             <button onclick="enviar()">Enviar</button>
         </div>
     </div>
 </body>
+
 </html>
