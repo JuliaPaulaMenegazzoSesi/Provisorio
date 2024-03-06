@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="pedido">
+        <div class="destino">
+            <select class="form-select" aria-label="aria-label">
+                <option selected>Selecione um destino</option>
+                <option value="salvador">Salvador</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="veneza">Veneza</option>
+                <option value="kilimanjaro">Kilimanjaro</option>
+                <option value="manila">Manila</option>
+            </select>
+        </div>
+        <div class="hospedagem">
+            <select class="form-select" aria-label="multiple select example">
+                <option selected>Selecione um lugar para ficar</option>
+                <option value="hotel">Hotel</option>
+                <option value="hostel">Hostel</option>
+                <option value="pousada">Pousada</option>
+                <option value="casa">Casa</option>
+                <option value="sem-lugar">Sem lugar</option>
+            </select>
+        </div>
+        <div class="plano">
+            <select class="form-select" aria-label="multiple select example">
+                <option selected>Selecione um plano</option>
+                <option value="1pessoa">1 pessoa</option>
+                <option value="2pessoas">2 pessoas</option>
+                <option value="familia">Plano Familia</option>
+                <option value="luademel">Lua de Mel</option>
+                <option value="grupo">Grupo</option>
+            </select>
+        </div>
+        <div class="pacotes">
+            <select class="form-select" aria-label="multiple select example">
+                <option selected>Selecione um pacote</option>
+                <option value="restaurante">Restaurantes</option>
+                <option value="bar">Bares</option>
+                <option value="passeios">Passeios</option>
+                <option value="com-crianças">Com Crianças</option>
+                <option value="sem-pacote">Sem pacote</option>
+            </select>
+        </div>
+        <div class="tempo">
+            <select class="form-select" aria-label="multiple select example">
+                <option selected>Selecione o tempo que deseja ficar</option>
+                <option value="5dias">5 dias</option>
+                <option value="15dias">15 dias</option>
+                <option value="mes">Mês</option>
+                <option value="batevolta">Bate e volta</option>
+                <option value="ida">Apenas ida</option>
+            </select>
+        </div>
+        <div class="enviar">
+            <p class=""><span></span></p>
+            <button onclick="enviar()">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
