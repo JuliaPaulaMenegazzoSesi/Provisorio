@@ -43,6 +43,19 @@ body{
     height: auto;
     border-radius: 100%;
     transition: all 200ms linear;
+    animation: fromRight 1.2s linear;
+}
+
+@keyframes  fromRight{
+    0%{
+        opacity: 0.3;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 p{
@@ -73,6 +86,18 @@ p:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fromLeft 1.2s linear;
+}
+
+@keyframes fromLeft{
+    0%{
+        opacity: 0.3;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .compra{
@@ -91,6 +116,13 @@ p:hover{
     background-color: rgba(0, 0, 0, 0.6);
     transition: all 200ms linear;
     border-radius: 20px;
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: rgba(46, 91, 240, 0.4) -5px 5px, rgba(46, 91, 240, 0.3) -10px 10px, rgba(46, 91, 240, 0.2) -15px 15px, rgba(46, 91, 240, 0.1) -20px 20px, rgba(46, 91, 240, 0.05) -25px 25px;
+}
+
+.compra:active{
+    transform: translateY(0px);
+    box-shadow: none;
 }
 
 .catalogo{
@@ -109,4 +141,12 @@ p:hover{
     background-color: rgba(0, 0, 0, 0.6);
     transition: all 200ms linear;
     border-radius: 20px;
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: rgba(46, 91, 240, 0.4) 5px 5px, rgba(46, 91, 240, 0.3) 10px 10px, rgba(46, 91, 240,0.2) 15px 15px, rgba(46, 91, 240, 0.1) 20px 20px, rgba(46, 91, 240, 0.05) 25px 25px;
 }
+
+.catalogo:active{
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
