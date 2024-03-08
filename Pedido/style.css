@@ -3,7 +3,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(../imagens/praia01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 1s linear;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Nixie One", system-ui;
 }
+
+@media(width<=800px){
+    body{
+        background-image: url(../imagens/praia02.png);
+    };
+    p {
+        opacity: 1;
+    }
+}
+
 select{
     margin: 5vh;
 }

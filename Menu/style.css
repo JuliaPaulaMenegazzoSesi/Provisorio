@@ -16,6 +16,9 @@ body{
     height: 100vh;
     width: auto;
     transition: all 1s linear;
+    font-family: "Nixie One", system-ui;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @media(width >= 800px){
