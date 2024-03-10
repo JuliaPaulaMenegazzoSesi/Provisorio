@@ -5,6 +5,23 @@ var packG;
 var tempG;
 var totalG;
 
+var registro = new Date();
+
+dt = formatarData(registro)
+
+function formatarData(item){
+
+    var options = {
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric"
+    }
+
+    return item.toLocaleString("pt-BR", options)
+}
+
 function calcular() {
     var selectDest = document.getElementById("desSelect");
     var selectHosp = document.getElementById("hosSelect");
@@ -12,6 +29,7 @@ function calcular() {
     var selectPack = document.getElementById("pacSelect");
     var selectTemp = document.getElementById("temSelect");
     var totalPrint = document.getElementById("totalP");
+    
 
     var dest = "";
     var hosp = "";
@@ -154,7 +172,7 @@ function calcular() {
 function enviar() {
     var numTel = "5541999999999"
 
-    var linkWpp = "https://wa.me/" + numTel + "?text=Total: R$" + totalG;
+    var linkWpp = "https://wa.me/" + numTel + "?text=Total: R$" + totalG + " - Data: " + dt;
 
     window.open(linkWpp, "_blank");
 }

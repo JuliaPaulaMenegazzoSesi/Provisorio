@@ -3,25 +3,123 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../imagens/praia01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    transition: all 1s linear;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: "Nixie One", system-ui;
+    background-color: #30C5FF;
+    color: #0c092f;
 }
 
-@media(width<=800px){
-    body{
-        background-image: url(../imagens/praia02.png);
-    };
-    p {
-        opacity: 1;
-    }
+header {
+    margin-top: 5px;
 }
 
-select{
+select {
     margin: 5vh;
+}
+
+.form-select {
+    background-color: #d9f6fa;
+}
+
+.btn-success {
+    background-color: #145d68;
+    border-color: #145d68;
+}
+
+.btn-success:hover {
+    background-color: #104249;
+    border-color: #104249;
+}
+
+.btn-success.active {
+    background-color: #0c3d44;
+    border-color: #0c3d44;
+}
+
+.botao-calcular{
+    border: none;
+    margin-bottom: 20px;
+    padding: 4px 8px 4px 8px;
+    transition: all 400ms linear;
+}
+
+.botao-calcular:hover{
+    border-radius: 10px;
+    transition: all 200ms linear;
+    background-color: #0c3d44;
+    color: #30C5FF;
+}
+
+.botao-enviar{
+    border: none;
+    margin-bottom: 20px;
+    padding: 3px 6px 3px 6px;
+    transition: all 400ms linear;
+}
+
+.botao-enviar:hover{
+    margin-bottom: 15px;
+    border: solid 2px;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    background-color: #25d336;
+    color: #fff;
+}
+
+footer {
+    margin-top: 10vh;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #A0DDE6;
+    color: black;
+}
+
+.sn-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre-nos {
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info {
+    margin: 0 5vw;
+    display: block;
+}
+
+.redes-sociais {
+    margin: 2vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista-redes-sociais {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.lista-sobre-nos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-sobre-nos li {
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
 }

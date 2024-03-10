@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido</title>
+    <title>Compra</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,11 +16,13 @@
 </head>
 
 <body>
-    <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" onclick="window.location.href='../Menu/index.html'" class="btn btn-success">Menu</button>
-        <button type="button" onclick="window.location.href='../ShowRoom/index.html'" class="btn btn-success">Catálogo</button>
-        <button type="button" onclick="window.location.href='../Pedido/index.html'" class="btn btn-success active">Compra</button>
-    </div>
+    <header>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="window.location.href='../Menu/index.html'" class="btn btn-success">Menu</button>
+            <button type="button" onclick="window.location.href='../ShowRoom/index.html'" class="btn btn-success">Catálogo</button>
+            <button type="button" onclick="window.location.href='../Pedido/index.html'" class="btn btn-success active">Compra</button>
+        </div>
+    </header>
     <div>
         <div class="pedido">
             <div class="destino">
@@ -73,7 +75,7 @@
                     <option value="ida">Apenas ida</option>
                 </select>
             </div>
-            <button onclick="calcular()">Calcular Total</button>
+            <button class="botao-calcular" onclick="calcular()">Calcular Total</button>
         </div>
 
         <div class="enviar">
@@ -83,9 +85,41 @@
             <p class="CpacoteSelect">Pacote: <span id="packP"></span></p>
             <p class="CtempoSelect">Tempo: <span id="tempP"></span></p>
             <p class="total">Sua viagem custará: <span id="totalP"></span></p>
-            <button onclick="enviar()">Enviar</button>
+            <button class="botao-enviar" onclick="enviar()">Enviar</button>
         </div>
     </div>
 </body>
+<footer>
+    <div class="sn-info">
+        <div class="sobre-nos">
+            <h6>Sobre nós</h6>
+            <ul class="lista-sobre-nos">
+                <li><a href="../Lorota/historia.html">Nossa história</a></li>
+                <li><a href="../Lorota/missao.html">Nossa missão</a></li>
+                <li><a href="../Lorota/equipe.html">Nossa equipe</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h6>Fale conosco</h6>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d10657.430999976134!2d-12.478950204256668!3d-37.425924859510644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDI1JzIwLjgiUyAxMsKwMjgnNDkuNSJX!5e0!3m2!1spt-BR!2sbr!4v1709897861129!5m2!1spt-BR!2sbr"
+                width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Funcionamento de segunda à sexta: 08h00 à 20h00</p>
+            <p>SAC: (11)9 9999-9999</p>
+            <p>E-mail: lorem@gmail.com</p>
+        </div>
+    </div>
+    <div class="redes-sociais">
+        <h6>Siga-nos nas redes sociais</h6>
+        <ul class="lista-redes-sociais">
+            <li><a href="https://www.facebook.com" target="_blank"><img src="../Imagens/facebook.svg"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="../Imagens/twitter.svg"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="../Imagens/instagram.svg"></a></li>
+            <li><a href="https://www.youtube.com" target="_blank"><img src="../Imagens/youtube.svg"></a></li>
+        </ul>
+    </div>
+    
+</footer>
 
 </html>
