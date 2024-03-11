@@ -12,6 +12,16 @@ header {
     margin-top: 20px;
 }
 
+.btn-success {
+    background-color: #145d68 !important;
+    border-color: #145d68 !important;
+}
+
+.btn-success:hover {
+    background-color: #104249 !important;
+    border-color: #104249 !important;
+}
+
 a {
     color: black !important;
     text-decoration: none !important;
